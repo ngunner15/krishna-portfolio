@@ -13,6 +13,14 @@ module.exports = {
       fontFamily: {
         philosopher: ['var(--font-philosopher)']
       },
+      animation: {
+        bounce:
+          "bounce 0.5s alternate cubic-bezier(0.95, 0.05, 0.795, 0.035) infinite"
+      },
+      bounce: {
+        from: { transform: "translateY(10px)" },
+        to: { transform: "translateY(0)" },
+      },
     },
     colors: {
       'dBlack': '#192320',
