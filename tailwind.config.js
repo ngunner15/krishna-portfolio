@@ -9,7 +9,16 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        philosopher: ['var(--font-philosopher)']
+      },
+    },
+    colors: {
+      'dBlack': '#192320',
+      'dGreen': '#DDFDE8',
+      'dEmerald': '#52b788',
+    },
   },
   plugins: [],
   darkMode: 'class',

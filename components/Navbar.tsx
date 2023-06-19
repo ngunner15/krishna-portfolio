@@ -33,13 +33,13 @@ const Navbar = () => {
   // const pathname = usePathname()
   const [navbar, setNavbar] = useState(false)
   return (
-    <header className="w-full mx-auto px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-gray-800 dark:border-b dark:border-stone-600">
+    <header className="w-full mx-auto px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-gray-800 dark:border-b dark:border-stone-600 font-philosopher">
       <div className="justify-between md:items-center md:flex">
         <div>
           <div className="md:py-5 md:block">
             <Link to="home">
               <div className="container flex items-center space-x-2">
-                <h2 className="text-2xl font-bold">Krishna Vadgama</h2>
+                <h2 className="text-3xl font-bold">Krishna Vadgama</h2>
               </div>
             </Link>
             <div className="md:hidden">
@@ -58,7 +58,7 @@ const Navbar = () => {
             navbar ? "block" : "hidden"
           }`}
         >
-          <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+          <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 font-semibold text-lg sm:text-xl">
             {NAV_ITEMS.map((item, idx) => {
               return (
                 <Link
