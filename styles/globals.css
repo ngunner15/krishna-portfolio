@@ -13,5 +13,9 @@
     display: block;
     box-sizing: border-box;
   }
+
+  h1 {
+    @apply font-philosopher
+  }
   
 }
