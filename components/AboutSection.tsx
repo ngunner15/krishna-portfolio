@@ -1,5 +1,8 @@
+"use client"
 import React from "react";
 import Image from "next/image"
+import { RoughNotation } from "react-rough-notation";
+import { useTheme } from "next-themes"
 
 const skills = [
   { skill: "Paediatric Physiotherapy" },
@@ -13,6 +16,11 @@ const skills = [
 ]
 
 const AboutSection = () => {
+  const { systemTheme, theme } = useTheme()
+  const currentTheme = theme === "system" ? systemTheme : theme
+
+  const color = currentTheme === "dark" ? "#DDFDE8" : "#600414"
+  
   return (
     <section id="about">
       <div className="my-12 pb-12 md:pt-16 md:pb-48">
@@ -65,9 +73,13 @@ const AboutSection = () => {
                 return (
                   <p
                     key={idx}
-                    className="bg-gray-200 px-4 py-2 mr-2 mt-2 rounded font-semibold"
+                    className="px-4 py-2 mr-2 mt-2 rounded font-semibold text-wYellow dark:text-dBlack"
                   >
-                    {item.skill}
+                    <RoughNotation type="highlight" show={true} animate={true} color={color}>
+                      <p className="p-2">
+                        {item.skill}
+                      </p>
+                    </RoughNotation>
                   </p>
                 )
               })}
