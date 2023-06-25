@@ -23,7 +23,8 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className={`${philosopher.variable} border-solid border-4 dark:bg-dBlack dark:border-dEmerald dark:text-dGreen`}>
+      <body className={`${philosopher.variable} bg-wYellow text-wBlack border-wBlack dark:text-dGreen`}>
+        <div className="top-0 right-0 left-0 bottom-0 fixed border-solid border-4 dark:bg-dBlack dark:border-dEmerald"></div>
         <ThemeProvider enableSystem={true} attribute="class">
           <Navbar />
           {children}
