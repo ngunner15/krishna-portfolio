@@ -30,13 +30,13 @@ const NAV_ITEMS: Array<NavItem> = [
 const Navbar = () => {
   const { systemTheme, theme, setTheme } = useTheme()
   const currentTheme = theme === "system" ? systemTheme : theme
-  // const pathname = usePathname()
+  const pathname = usePathname()
   const [navbar, setNavbar] = useState(false)
   return (
-    <header className="w-full mx-auto px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-gray-800 dark:border-b dark:border-stone-600 font-philosopher">
+    <header className="w-full mx-auto px-4 sm:px-20 fixed top-0 border-t-4 z-50 shadow-wShadow dark:shadow-dShadow rounded-lg bg-wYellow dark:bg-dBlack dark:text-dGreen dark:border-dEmerald font-philosopher">
       <div className="justify-between md:items-center md:flex">
         <div>
-          <div className="md:py-5 md:block">
+          <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link to="home">
               <div className="container flex items-center space-x-2">
                 <h2 className="text-3xl font-bold">Krishna Vadgama</h2>
@@ -83,7 +83,7 @@ const Navbar = () => {
                 onClick={() => setTheme("light")}
                 className="bg-slate-100 p-2 rounded-xl"
               >
-                <RiSunLine size={25} color="black" />
+                <RiSunLine size={25} className="dark:text-dGreen" />
               </button>
             ) : (
               <button
