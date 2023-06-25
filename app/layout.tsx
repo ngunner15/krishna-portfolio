@@ -1,6 +1,7 @@
 "use client"
 import '../styles/globals.css'
 import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 import { ThemeProvider } from 'next-themes'
 import { Philosopher } from '@next/font/google'
 
@@ -23,11 +24,12 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className={`${philosopher.variable} bg-wYellow text-wBlack border-wBlack dark:text-dGreen`}>
-        <div className="top-0 right-0 left-0 bottom-0 fixed border-solid border-4 dark:bg-dBlack dark:border-dEmerald"></div>
+      <body className={`${philosopher.variable} bg-wYellow text-wBlack border-wBlack dark:text-dGreen dark:bg-dBlack`}>
+        <div className="top-0 right-0 left-0 bottom-0 fixed border-solid border-4 dark:border-dEmerald"></div>
         <ThemeProvider enableSystem={true} attribute="class">
           <Navbar />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
