@@ -21,11 +21,17 @@ module.exports = {
         from: { transform: "translateY(10px)" },
         to: { transform: "translateY(0)" },
       },
+      boxShadow: {
+        'wShadow': '0px 8px 0px 0px #600414',
+        'dShadow': '0px 8px 0px 0px #52b788'
+      }
     },
     colors: {
       'dBlack': '#192320',
       'dGreen': '#DDFDE8',
       'dEmerald': '#52b788',
+      'wYellow': '#FCF270',
+      'wBlack': '#600414'
     },
   },
   plugins: [],
