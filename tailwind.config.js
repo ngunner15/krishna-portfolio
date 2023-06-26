@@ -11,7 +11,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        philosopher: ['var(--font-philosopher)']
+        philosopher: ['var(--font-philosopher)'],
+        monkey: ['var(--font-monkey)']
       },
       animation: {
         bounce:
