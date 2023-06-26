@@ -10,7 +10,7 @@ const HeroSection = () => {
   const { systemTheme, theme } = useTheme()
   const currentTheme = theme === "system" ? systemTheme : theme
 
-  const color = currentTheme === "dark" ? "#52b788" : "#600414"
+  const color = currentTheme === "dark" ? "#52b788" : "#9F2145"
   return (
     <section id="home">
       <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-16 sm:py-32 md:py-48 md:flex-row md:space-x-4 md:text-left">

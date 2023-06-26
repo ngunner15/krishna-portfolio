@@ -19,8 +19,8 @@ const AboutSection = () => {
   const { systemTheme, theme } = useTheme()
   const currentTheme = theme === "system" ? systemTheme : theme
 
-  const colorSkill = currentTheme === "dark" ? "#52b788" : "#600414"
-  const colorText = currentTheme === "dark" ? "#52b788" : "#600414"
+  const colorSkill = currentTheme === "dark" ? "#52b788" : "#9F2145"
+  const colorText = currentTheme === "dark" ? "#52b788" : "#9F2145"
   
   return (
     <section id="about">
@@ -37,9 +37,9 @@ const AboutSection = () => {
             <p className="text-lg">
               Hi, my name is Krishna and I am a
               <br />
-              <RoughNotation type="box" show={true} animate={true} color={colorText} strokeWidth={2}> highly ambitious"</RoughNotation>,
-              <RoughNotation type="box" show={true} animate={true} color={colorText} strokeWidth={2}> self-motivated"</RoughNotation>, and
-              <RoughNotation type="box" show={true} animate={true} color={colorText} strokeWidth={2}> driven"</RoughNotation> physiotherapist
+              <RoughNotation type="box" show={true} animate={true} color={colorText} strokeWidth={2}> highly ambitious</RoughNotation>,
+              <RoughNotation type="box" show={true} animate={true} color={colorText} strokeWidth={2}> self-motivated</RoughNotation>, and
+              <RoughNotation type="box" show={true} animate={true} color={colorText} strokeWidth={2}> driven</RoughNotation> physiotherapist
               based in Savarkundla, Gujarat.
             </p>
             <br />
@@ -58,9 +58,11 @@ const AboutSection = () => {
             <br />
             <p className="text-lg">
               I believe that you should{" "}
+              <br className="md:hidden"/>
               <RoughNotation type="underline" show={true} animate={true} color={colorText} strokeWidth={2}>
                 <span className="font-bold">never stop growing</span>
-              </RoughNotation>{" "}
+              </RoughNotation>
+              {" "}
               and that&#39;s what I strive to do, I have a passion for
               learning and a desire to always push the limits of what is
               possible. I am excited to see where my career takes me and am

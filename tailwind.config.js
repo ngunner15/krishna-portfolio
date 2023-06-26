@@ -32,7 +32,8 @@ module.exports = {
       'dGreen': '#DDFDE8',
       'dEmerald': '#52b788',
       'wYellow': '#FCF270',
-      'wBlack': '#600414'
+      'wBlack': '#600414',
+      'wRed': '#9F2145'
     },
   },
   plugins: [],
