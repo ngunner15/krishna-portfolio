@@ -19,62 +19,64 @@ const AboutSection = () => {
   const { systemTheme, theme } = useTheme()
   const currentTheme = theme === "system" ? systemTheme : theme
 
-  const color = currentTheme === "dark" ? "#DDFDE8" : "#600414"
+  const colorSkill = currentTheme === "dark" ? "#52b788" : "#600414"
+  const colorText = currentTheme === "dark" ? "#52b788" : "#600414"
   
   return (
     <section id="about">
-      <div className="my-12 pb-12 md:pt-16 md:pb-48">
-        <h1 className="text-center font-bold text-4xl">
+      <div className="my-12 pb-12 md:pt-16 md:pb-16">
+        <h1 className="text-center font-bold text-5xl mb-8">
           About Me
         </h1>
 
         <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
           <div className="md:w-1/2 ">
-            <h1 className="text-center text-2xl font-bold mb-6 md:text-left">
+            <h2 className="text-center text-3xl font-bold mb-6 md:text-left">
               Get to know me!
-            </h1>
-            <p>
-              Hi, my name is Krishna and I am a{" "}
-              <span className="font-bold">{"highly ambitious"}</span>,
-              <span className="font-bold">{" self-motivated"}</span>, and
-              <span className="font-bold">{" driven"}</span> physiotherapist
+            </h2>
+            <p className="text-lg">
+              Hi, my name is Krishna and I am a
+              <br />
+              <RoughNotation type="box" show={true} animate={true} color={colorText} strokeWidth={2}> highly ambitious"</RoughNotation>,
+              <RoughNotation type="box" show={true} animate={true} color={colorText} strokeWidth={2}> self-motivated"</RoughNotation>, and
+              <RoughNotation type="box" show={true} animate={true} color={colorText} strokeWidth={2}> driven"</RoughNotation> physiotherapist
               based in Savarkundla, Gujarat.
             </p>
             <br />
-            <p>
+            <p className="text-lg">
               I graduated from The Maharaja Sayajirao University of Baroda in 2016
               with a Bachelor of Physiotherapy and have been working in the
               field ever since.
             </p>
             <br />
-            <p>
+            <p className="text-lg">
               I have a wide range of hobbies and passions that keep me busy.
-              From reading, playing sports, traveling, to making YouTube videos,
+              From reading, traveling, photography, to making Instagram reels,
               I am always seeking new experiences and love to keep myself
               engaged and learning new things.
             </p>
             <br />
-            <p>
+            <p className="text-lg">
               I believe that you should{" "}
-              <span className="font-bold text-teal-500">
-                never stop growing
-              </span>{" "}
+              <RoughNotation type="underline" show={true} animate={true} color={colorText} strokeWidth={2}>
+                <span className="font-bold">never stop growing</span>
+              </RoughNotation>{" "}
               and that&#39;s what I strive to do, I have a passion for
-              technology and a desire to always push the limits of what is
+              learning and a desire to always push the limits of what is
               possible. I am excited to see where my career takes me and am
               always open to new opportunities. 🙂
             </p>
           </div>
           <div className="text-center md:w-1/2 md:text-left">
-            <h1 className="text-2xl font-bold mb-6">My Skills</h1>
+            <h2 className="text-3xl font-bold mb-6">My Skills</h2>
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
               {skills.map((item, idx) => {
                 return (
                   <p
                     key={idx}
-                    className="px-4 py-2 mr-2 mt-2 rounded font-semibold text-wYellow dark:text-dBlack"
+                    className="px-4 py-2 mr-2 mt-2 rounded font-semibold text-wYellow dark:text-dBlack text-xl"
                   >
-                    <RoughNotation type="highlight" show={true} animate={true} color={color}>
+                    <RoughNotation type="highlight" show={true} animate={true} color={colorSkill}>
                       <p className="p-2">
                         {item.skill}
                       </p>
@@ -84,7 +86,7 @@ const AboutSection = () => {
               })}
             </div>
             <Image
-              src="/about-section-image.jpg"
+              src="/about-section-image-transparent.png"
               alt="about section image"
               width={325}
               height={325}
