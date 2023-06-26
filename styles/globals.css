@@ -4,17 +4,22 @@
 
 @layer base{
 
-  html,body {
-    width: 100%;
+  body {
     height: 100%;
-    margin: 0; /* Space from this element (entire page) and others*/
-    padding: 0; /*space from content and border*/
-    overflow: hidden;
-    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    @apply font-monkey;
+  }
+
+  header {
     box-sizing: border-box;
   }
 
   h1 {
+    @apply font-philosopher
+  }
+
+  h2 {
     @apply font-philosopher
   }
   
