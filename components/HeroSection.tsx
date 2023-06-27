@@ -1,7 +1,8 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
-import { Link } from "react-scroll/modules"
+import { Link as Animate } from "react-scroll/modules"
+import Link from 'next/link'
 import { BiDownArrow } from "react-icons/bi"
 import { RoughNotation } from "react-rough-notation";
 import { useTheme } from "next-themes"
@@ -32,13 +33,16 @@ const HeroSection = () => {
                 Physiotherapist
               </span>
             </RoughNotation>
-            {"  "}based in Savarkundla, Gujarat, India. Working towards treating and taking care of patients that
+            {"  "}based in Savarkundla, Gujarat, India. Working towards treating and taking care of patients to
             makes their lives easier.
           </p>
+          <div className="flex justify-center md:justify-start">
+            <Link className="text-lg md:text-2xl font-semibold tracking-wide absolute mt-2 px-6 py-3 rounded-lg shadow bg-wRed text-wYellow dark:bg-dEmerald dark:text-dBlack hover:bg-wHoverRed dark:hover:bg-dHoverEmerald cursor-pointer" href="mailTo:krishnasondagar28@gmail.com">Get in Touch!</Link>
+          </div>
         </div>
       </div>
       <div className="flex flex-row items-center text-center justify-center ">
-        <Link
+        <Animate
           to="about"
           activeClass="active"
           spy={true}
@@ -47,7 +51,7 @@ const HeroSection = () => {
           duration={500}
         >
           <BiDownArrow size={35} className="animate-bounce cursor-pointer" />
-        </Link>
+        </Animate>
       </div>
     </section>
   )
