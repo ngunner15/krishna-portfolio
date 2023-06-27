@@ -32,13 +32,16 @@ module.exports = {
       'dGreen': '#DDFDE8',
       'dEmerald': '#52b788',
       'dHoverEmerald': '#31D484',
+      'dHoverBlack': '#244135',
       'wYellow': '#FCF270',
       'wBlack': '#600414',
       'wRed': '#9F2145',
       'wHoverRed': '#C54E6B'
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar')({ nocompatible: true }),
+  ],
   darkMode: 'class',
 }
 
