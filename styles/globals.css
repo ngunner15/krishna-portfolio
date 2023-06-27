@@ -22,5 +22,34 @@
   h2 {
     @apply font-philosopher
   }
+
+  
+  /* ::-webkit-scrollbar {
+    width: 1.5rem;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(96, 4, 20, 1);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(197, 78, 107, 1);
+    border: 0.25rem solid rgba(96, 4, 20, 1);
+    border-radius: 100vw;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(177, 98, 107, 1);
+  }
+
+  @supports (scrollbar-color: red blue) {
+    * {
+      scrollbar-color: rgba(197, 78, 107, 1) rgba(96, 4, 20, 1);
+    }
+
+    .scrollable-element {
+      scrollbar-color: dark;
+    }
+  } */
   
 }
