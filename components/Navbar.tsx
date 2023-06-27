@@ -33,7 +33,7 @@ const Navbar = () => {
   const pathname = usePathname()
   const [navbar, setNavbar] = useState(false)
   return (
-    <header className="w-full mx-auto px-4 sm:px-20 fixed top-0 border-t-4 z-50 shadow-wShadow dark:shadow-dShadow rounded-lg bg-wYellow dark:bg-dBlack dark:text-dGreen dark:border-dEmerald font-philosopher">
+    <header className="w-full mx-auto px-4 sm:px-20 fixed top-0 border-t-4 border-r-4 border-l-4 z-50 shadow-wShadow dark:shadow-dShadow rounded-lg bg-wYellow dark:bg-dBlack dark:text-dGreen dark:border-dEmerald font-philosopher">
       <div className="justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
