@@ -79,9 +79,7 @@ const AboutSection = () => {
                     className="px-4 py-2 mr-2 mt-2 rounded font-semibold text-wYellow dark:text-dBlack text-xl"
                   >
                     <RoughNotation type="highlight" show={true} animate={true} color={colorSkill}>
-                      <p className="p-2">
-                        {item.skill}
-                      </p>
+                      {item.skill}
                     </RoughNotation>
                   </p>
                 )
