@@ -8,21 +8,16 @@
     height: 100%;
     width: 100%;
     box-sizing: border-box;
-    @apply font-monkey;
+    font-family: 'Happy Monkey', cursive;
   }
 
   header {
     box-sizing: border-box;
   }
 
-  h1 {
-    @apply font-philosopher
+  h1, h2 {
+    font-family: 'Philosopher', sans-serif;
   }
-
-  h2 {
-    @apply font-philosopher
-  }
-
   
   /* ::-webkit-scrollbar {
     width: 1.5rem;
