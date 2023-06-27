@@ -31,7 +31,7 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className={`${philosopher.variable} ${happyMonkey.variable} bg-wYellow text-wBlack border-wBlack dark:text-dGreen dark:bg-dBlack`}>
+      <body className={`${philosopher.variable} ${happyMonkey.variable} scrollbar scrollbar-track-wBlack scrollbar-thumb-wRed hover:scrollbar-thumb-wHoverRed dark:scrollbar-track-dEmerald dark:scrollbar-thumb-dBlack dark:hover:scrollbar-thumb-dHoverBlack scrollbar-thumb-rounded-lg bg-wYellow text-wBlack border-wBlack dark:text-dGreen dark:bg-dBlack`}>
         <div className="top-0 right-0 left-0 bottom-0 fixed border-solid border-4 dark:border-dEmerald"></div>
         <ThemeProvider enableSystem={true} attribute="class">
           <Navbar />
