@@ -20,7 +20,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Philosopher:wght@400;700&display=swap" rel="stylesheet"></link>
       <head />
       <body className="scrollbar scrollbar-track-wBlack scrollbar-thumb-wRed hover:scrollbar-thumb-wHoverRed dark:scrollbar-track-dEmerald dark:scrollbar-thumb-dBlack dark:hover:scrollbar-thumb-dHoverBlack scrollbar-thumb-rounded-lg bg-wYellow text-wBlack border-wBlack dark:text-dGreen dark:bg-dBlack">
-        <div className="top-0 right-0 left-0 bottom-0 fixed border-solid border-4 dark:border-dEmerald"></div>
+        <div className="top-0 right-0 left-0 bottom-0 fixed border-solid border-r-4 border-l-4 dark:border-dEmerald"></div>
         <ThemeProvider enableSystem={true} attribute="class">
           <Navbar />
           {children}
