@@ -44,7 +44,7 @@ const AboutSection = () => {
             </p>
             <br />
             <p className="text-lg">
-              I graduated from The Maharaja Sayajirao University of Baroda in 2016
+              I graduated from The Maharaja Sayajirao University of Baroda in 2017
               with a Bachelor of Physiotherapy and have been working in the
               field ever since.
             </p>
