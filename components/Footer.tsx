@@ -5,12 +5,13 @@ import {
 } from "react-icons/ai"
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="mx-auto max-w-full px-4 sm:px-6 border-t-2 mt-8 md:mt-12">
       <hr className="w-full h-0.5 mx-auto mt-1 border-0"></hr>
       <div className="mx-auto p-4 md:px-16 flex flex-col text-center text-neutral-900 md:flex-row md:justify-between">
         <div className="flex flex-row items-center justify-center space-x-1 text-neutral-500 dark:text-neutral-100">
-          © 2023 Nisarg Vadgama<a href="/" className="hover:underline"></a>
+          © {currentYear} Nisarg Vadgama<a href="/" className="hover:underline"></a>
         </div>
         <div className="flex flex-row items-center justify-center space-x-2 mb-1">
           <a href="https://github.com/ngunner15" rel="noreferrer" target="_blank">
