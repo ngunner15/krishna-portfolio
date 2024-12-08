@@ -33,7 +33,7 @@ const HeroSection = () => {
                 Physiotherapist
               </span>
             </RoughNotation>
-            {"  "}based in Savarkundla, Gujarat, India. Working towards treating and taking care of patients to
+            {"  "}based in Canada. Working towards treating and taking care of patients to
             makes their lives easier.
           </p>
           <div className="flex justify-center md:justify-start">
