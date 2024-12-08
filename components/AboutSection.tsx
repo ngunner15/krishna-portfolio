@@ -40,7 +40,7 @@ const AboutSection = () => {
               <RoughNotation type="box" show={true} animate={true} color={colorText} strokeWidth={2}> highly ambitious</RoughNotation>,
               <RoughNotation type="box" show={true} animate={true} color={colorText} strokeWidth={2}> self-motivated</RoughNotation>, and
               <RoughNotation type="box" show={true} animate={true} color={colorText} strokeWidth={2}> driven</RoughNotation> physiotherapist
-              based in Savarkundla, Gujarat.
+              based in Victoria, British Columbia, Canada.
             </p>
             <br />
             <p className="text-lg">
@@ -65,8 +65,7 @@ const AboutSection = () => {
               {" "}
               and that&#39;s what I strive to do, I have a passion for
               learning and a desire to always push the limits of what is
-              possible. I am excited to see where my career takes me and am
-              always open to new opportunities. 🙂
+              possible. Right now I am focused on getting my Physiotherapist license in Canada 🙂.
             </p>
           </div>
           <div className="text-center md:w-1/2 md:text-left">
