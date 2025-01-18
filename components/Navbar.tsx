@@ -23,7 +23,7 @@ const NAV_ITEMS: Array<NavItem> = [
   },
   {
     label: "Images",
-    page: "images",
+    page: "image",
   },
 ]
 
